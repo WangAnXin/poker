@@ -1,0 +1,110 @@
+<resources>
+    <!--登录用的string-->
+    <string name="login_success">登陆成功</string>
+    <string name="login">登录</string>
+    <string name="Username">用户名</string>
+    <string name="Password">密码</string>
+    <string name="forgot_your_password">忘记密码?（未实现）</string>
+    <string name="go">登录</string>
+    <string name="repeat_password">重新输入密码</string>
+    <string name="next">注册</string>
+    <string name="register">注册</string>
+
+    <string name="app_name">Poker</string>
+
+    <dimen name="login_mode_height">225dp</dimen>
+    <dimen name="login_mode_width">144dp</dimen>
+    <dimen name="poker_logo_height">120dp</dimen>
+    <dimen name="poker_logo_width">300dp</dimen>
+    <dimen name="login_relative_width">328dp</dimen>
+    <dimen name="palm_height">120dp</dimen>
+    <dimen name="palm_width">150dp</dimen>
+
+    <dimen name="butterfly_height">261.85dp</dimen>
+    <dimen name="butterfly_width">280dp</dimen>
+
+    <dimen name="small_people_height">66dp</dimen>
+    <dimen name="small_people_width">44dp</dimen>
+    <dimen name="big_people_height">100dp</dimen>
+    <dimen name="big_people_width">66dp</dimen>
+    <dimen name="people_vertical_marign">5dp</dimen>
+
+    <dimen name="fourfunction_HW">40dp</dimen>
+    <dimen name="fourfunction_HALF_HW">20dp</dimen>
+
+    <dimen name="clock_H">36dp</dimen>
+    <dimen name="clock_W">36dp</dimen>
+    <dimen name="clock_HALF_HW">20dp</dimen>
+    <dimen name="clock_margin_button">10dp</dimen>
+    <dimen name="clock_margin_bottom">-10dp</dimen>
+
+    <dimen name="fourfunction_diversion">15dp</dimen>
+
+    <dimen name="CardView_CornerRadius">5dp</dimen>
+    <dimen name="CardView_Elevation">10dp</dimen>
+
+    <dimen name="room_master_down_H">30dp</dimen>
+    <dimen name="room_master_down_W">45dp</dimen>
+    <dimen name="room_master_down_diversion">10dp</dimen>
+
+    <dimen name="room_master_H">16dp</dimen>
+    <dimen name="room_master_W">24dp</dimen>
+    <dimen name="room_master_diversion">7dp</dimen>
+
+    <dimen name="land_down_HW">20dp</dimen>
+    <dimen name="robort_down_HW">20dp</dimen>
+    <dimen name="robort_HW">15dp</dimen>
+    <dimen name="land_robort_down_diversion">15dp</dimen>
+    <dimen name="land_HW">15dp</dimen>
+    <dimen name="land_robort_diversion">5dp</dimen>
+    <dimen name="land_robort_negative_diversion">-15dp</dimen>
+
+    <dimen name="function_btn_height">33.33dp</dimen>
+    <dimen name="function_btn_width">80dp</dimen>
+    <dimen name="function_btn_cardCornerRadius">5dp</dimen>
+    <dimen name="function_vertical_diversion">10dp</dimen><!--start按钮和人物垂直的距离-->
+    <dimen name="function_btn_diversion">25dp</dimen><!--出牌和提示按钮与不出按钮之间的间隔-->
+    <dimen name="function_btn_diversion_2">16dp</dimen><!--1分和2分的间隔，3分和不叫的间隔-->
+    <dimen name="function_btn_diversion_3">48dp
+    </dimen><!--(function_btn_width + function_btn_diversion_2)/2-->
+
+    <dimen name="displayinfo_btn_height">35dp</dimen>
+    <dimen name="displayinfo_btn_width">70dp</dimen>
+    <dimen name="displayinfo_btn_diversion">10dp</dimen>
+    <dimen name="displayinfo_btn_vertical_diversion">10dp</dimen>
+
+    <dimen name="undercard_height">79dp</dimen>
+    <dimen name="undercard_width">104dp</dimen>
+
+    <dimen name="scorepanel_height">86.2dp</dimen>
+    <dimen name="scorepanel_width">150dp</dimen>
+    <dimen name="score_button_height">18dp</dimen>
+    <dimen name="score_button_width">60dp</dimen>
+    <dimen name="scorepanel_table_height">82.2dp</dimen>
+    <dimen name="scorepanel_table_width">146dp</dimen>
+
+    <dimen name="end_scorepanel_height">195dp</dimen>
+    <dimen name="end_scorepanel_width">150dp</dimen>
+    <dimen name="end_scorepanel_table_height">185dp</dimen><!--250/5.75 43.5 -->
+    <dimen name="end_scorepanel_table_width">140dp</dimen>
+    <dimen name="end_scorepanel_close_table_width">120dp</dimen>
+    <dimen name="end_scorepanel_close_HW">20dp</dimen>
+    <dimen name="end_scorepanel_close_marign">5dp</dimen>
+
+    <dimen name="cannothint_height">64dp</dimen>
+    <dimen name="cannothint_width">80dp</dimen>
+
+    <dimen name="chat_2_width">62.5dp</dimen>
+    <dimen name="chat_2_height">9dp</dimen>
+    <dimen name="chat_1_width">62.5dp</dimen>
+    <dimen name="chat_1_height">36dp</dimen>
+    <dimen name="chat_diversion">-5dp</dimen>
+    <dimen name="chat_textSize">8sp</dimen>
+
+    <dimen name="textSize">10sp</dimen>
+    <dimen name="info_textSize">7sp</dimen>
+    <dimen name="alignAllBottom">10dp</dimen>
+    <dimen name="alignAllBottom_LR">20dp</dimen>
+    <string name="title_activity_player_info">PlayerInfoActivity</string>
+
+</resources>

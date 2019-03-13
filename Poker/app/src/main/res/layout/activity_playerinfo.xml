@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity.PlayerInfoActivity">
+
+    <!--登录的界面-->
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/cv">
+
+        <!--分三层，第一层为标题，第二层为信息，第三层为保存按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@mipmap/login_background">
+
+            <!--个人信息的标题-->
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <View
+                    android:layout_alignParentStart="true"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:background="#2fa881"
+                    />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="个人信息"
+                    android:textColor="#FFCC00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <!--将人的图片，和信息分开-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--人物图片-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/player_pic"
+                        android:layout_width="@dimen/big_people_width"
+                        android:layout_height="@dimen/big_people_height"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/man0"/>
+                </RelativeLayout>
+
+                <!--人物信息-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--个人信息-->
+                    <!--玩家名-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:textSize="13sp"
+                            android:text="玩家名："
+                            android:textColor="#FFCC00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            />
+                        <android.support.design.widget.TextInputLayout
+                            android:textColorHint="#c5c5c5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/player_name"
+                                android:textSize="13sp"
+                                android:textColor="#2fa881"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:inputType="textPersonName"
+                                android:background="@drawable/selector_bg_edit"
+                                android:textCursorDrawable="@drawable/bg_input_cursor"
+                                android:paddingBottom="2dp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <!--性别选择-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:textSize="13sp"
+                            android:text="性别："
+                            android:textColor="#FFCC00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            />
+                        <RadioGroup
+                            android:id="@+id/player_sex_rg"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <RadioButton
+                                android:id="@+id/player_isMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="男"
+                                android:textColor="#FFCC00"/>
+                            <RadioButton
+                                android:id="@+id/player_isFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="女"
+                                android:textColor="#FFCC00"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <!--当前积分（不可修改）-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <TextView
+                            android:textSize="13sp"
+                            android:text="当前积分："
+                            android:textColor="#FFCC00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/player_score"
+                            android:textSize="13sp"
+                            android:textColor="#2fa881"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="100"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--保存的按钮-->
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <Button
+                    android:id="@+id/bt_save"
+                    android:background="@drawable/bt_shape"
+                    android:stateListAnimator="@drawable/state_list_animator_z"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text="保存"
+                    android:textColor="#d3d3d3"
+                    >
+                </Button>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

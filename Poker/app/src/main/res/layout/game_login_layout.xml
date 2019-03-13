@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gamelogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/landlord2">
+
+
+    <TextView
+        android:id="@+id/poker_logo"
+        android:layout_width="@dimen/poker_logo_width"
+        android:layout_height="@dimen/poker_logo_height"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/poker"/>
+
+    <RelativeLayout
+        android:id="@+id/login_select_layout"
+        android:layout_width="@dimen/login_relative_width"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:transformPivotX="164dp"
+        android:transformPivotY="450dp">
+
+        <!--手掌-->
+        <TextView
+            android:id="@+id/palm"
+            android:layout_width="@dimen/palm_width"
+            android:layout_height="@dimen/palm_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/left_select_cv"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="-25dp"
+            android:background="@mipmap/palm">
+        </TextView>
+
+        <!--单机模式和联网模式的选择-->
+        <android.support.v7.widget.CardView
+        android:id="@+id/left_select_cv"
+        android:layout_width="@dimen/login_mode_width"
+        android:layout_height="@dimen/login_mode_height"
+        android:rotation="-10"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        app:cardMaxElevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true">
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+        android:id="@+id/right_select_cv"
+        android:layout_width="@dimen/login_mode_width"
+        android:layout_height="@dimen/login_mode_height"
+        android:rotation="10"
+        android:layout_toRightOf="@+id/left_select_cv"
+        android:layout_alignBottom="@id/left_select_cv"
+
+        app:cardMaxElevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true">
+        </android.support.v7.widget.CardView>
+
+        <!--手指-->
+        <TextView
+            android:id="@+id/finger"
+            android:layout_width="@dimen/palm_width"
+            android:layout_height="@dimen/palm_height"
+            android:layout_alignBottom="@id/palm"
+            android:layout_alignStart="@id/palm"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/finger">
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <!--左右的蝴蝶-->
+    <TextView
+        android:id="@+id/right_butterfly"
+        android:layout_width="@dimen/butterfly_width"
+        android:layout_height="@dimen/butterfly_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/right_butterfly">
+    </TextView>
+    <TextView
+        android:id="@+id/left_butterfly"
+        android:layout_width="@dimen/butterfly_width"
+        android:layout_height="@dimen/butterfly_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/left_butterfly">
+    </TextView>
+
+    <!--黑幕-->
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/shady"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/black"-->
+        <!--app:cardMaxElevation="10dp"-->
+        <!--app:cardElevation="10dp"-->
+        <!--android:visibility="invisible">-->
+    <!--</android.support.v7.widget.CardView>-->
+
+
+</RelativeLayout>
