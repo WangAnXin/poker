@@ -1,0 +1,3 @@
+*.js linguist-language=Android, C#
+*.css linguist-language=Android, C#
+*.html linguist-language=Android, C#
