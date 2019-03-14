@@ -9,8 +9,11 @@
 ### 登陆阶段
 #### 登录
 单击联网模式后如下所示（前提手机需要联网，如果未联网会弹出弹框提示连接失败），如果已经注册过用户名和密码，可以直接输入用户名和密码进行登录，服务器返回对应的登录结果。如果登录成功会进入匹配阶段。
+
 选中“记住密码”后，如果登录成功，会记录本次登录的用户名和密码，下次登录的时候用户名和密码会已经被输入。
+
 选中“自动登录”后，如果登录成功，下次登录的时候会自动按照本次登录的用户名和密码进行登录。
+
 点击右上角绿色的“加号”可进行注册。
 
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image006.jpg)
@@ -23,6 +26,7 @@
 ### 匹配阶段
 登录成功后会进入匹配阶段，匹配阶段有“开始匹配”和“个人信息”两个按钮。
 点击“个人信息”会出现个人信息界面，如下所示。玩家可修改玩家名，性别，人物图片（图片只有固定的6种），可查看当前积分（不能修改），点击保存会将个人信息上传到服务器。
+
 点击“开始匹配”后，服务器会查询当前大厅的房间，找出当前房间人数未满（小于4），将玩家放入该房间中，进入游戏准备阶段。
 
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image008.jpg)
@@ -46,8 +50,6 @@
 
 3. 如果没有任何一个玩家叫分，则服务器洗牌，重新发卡组信息，重新开始叫地主；如果连续三轮没有人叫地主，则服务器随机指定一个人作为地主，底分设置为1，进入发地主牌阶段。
 
-叫完地主后，底牌翻转显示（左上角），给地主发8张牌，当前底分变成所叫的最高分，倍数变为1，显示地主UI，然后进入出牌阶段。
-
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image012.jpg)
  
 ### 出牌阶段
@@ -58,18 +60,26 @@
 2.	不出按钮：显示不出，玩家过，下一玩家出牌（如果当前为玩家出牌阶段，则不出按钮会变成灰色，玩家不能选中）。
 
 3.	提示按钮：根据算法将能出的牌选中。
+
 3.1.	如果当前处于自己出牌阶段，单击“提示”会提示当前能一次性出的牌的数量最多的牌型，再次单击“提示”会出比当前提示大的牌，如果没有，会提示下一种能出的牌的数量最多得牌型，以此循环。
+
 3.2.	如果当前处于上家已出牌阶段，单击“提示”会提示比上家大的牌，再次点击“提示”会提示比当前提示大的牌，依次循环；如果当前没有比上家大的牌，则提示当前没有可出的牌。
 
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image013.jpg)
  
 ### 积分结算阶段
 地主胜：地主得分为3×底分×倍数；其余玩家各得：－底分×倍数
+
 地主败：地主得分为 －3×底分×倍数；其余玩家各得：底分×倍数
+
 以下情况，输赢的基本分翻倍（翻倍条件可重叠）：
+
 每打出一个六张牌和七张牌的炸弹，基本分×2
+
 每打出一个8张牌炸弹和天王炸弹，基本分×3
+
 地主所有牌出完，其他三家一张都未出，基本分×2
+
 其他两家中有一家先出完牌，地主只出过一手牌，基本分×2
 
 结算完四位玩家的积分后，将其保存到数据库信息中（电脑数据不保存），点结算积分榜的差，结算积分，回到游戏准备阶段。
@@ -93,19 +103,16 @@
 控制背景音乐播放，可关闭背景音乐和开启背景音乐。
 背景音乐播放：从八首背景音乐中循环播放，当一首结束后随机播放下一首。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image018.jpg)
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image019.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image018.jpg) ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image019.jpg)
 ## 游戏音效按钮
 控制游戏音效播放，可关闭游戏音效和开启游戏音效。
 游戏音效播放：有开始游戏、发牌、出牌、提醒、倍数翻倍、胜利失败、男女生出牌类型、叫地主、抢地主、打牌、不出、不叫、飞机炸弹音等等各种音效。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image020.jpg)
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image021.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image020.jpg) ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image021.jpg)
 ## 明牌按钮
 在单机模式下，玩家可以点击明牌按钮，电脑的牌将会翻转（显示），图标从“明”字变为“暗”字，点击“暗”字，电脑的将再次翻转（关闭显示）。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image022.jpg)  
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image023.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image022.jpg)  ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image023.jpg)
 
 ## 连续选牌
 选牌的时候可以进行连续选牌，被选中的牌会变成阴影。松开后，变成阴影的牌会相应的上浮或下移，然后扑克牌图片还回原样。
