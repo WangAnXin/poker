@@ -2,7 +2,7 @@
 初始的游戏界面如下所示，一开始只有两个选项，一个是单机模式下游玩，另一个是联网模式的游玩。
 单机模式下无需联网即可游玩。
 联网模式必须能连外网，连接服务器，登录账号才可进入游戏。
-![image](http://47.106.233.132/1551239534516791.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image005.jpg)
  
 1.联网模式
 （1）登陆阶段
