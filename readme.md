@@ -41,7 +41,7 @@
 ### 游戏开始（发牌）阶段
 游戏开始后，客户端接受服务器端的牌组信息，客户端显示发牌阶段，发牌动画完成进入叫地主阶段。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image011.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/发牌.gif)
  
 ### 叫地主阶段
 1. 由服务器随机指定一个人开始叫分，玩家可以选择叫“1分”、“2分”、“3分”或者不叫分，所叫的分数必须比上一家高，每位玩家有12秒的叫分时间，如果12秒内未叫分客户端将会自动不叫，如果客户端断开未发消息给服务器，服务器15秒内会认为该玩家不叫，并且认为该玩家断线。叫3分的玩家成为地主；如果没有玩家叫3分，则一轮下来叫分最高的玩家成为地主，进入发地主牌阶段。
@@ -50,7 +50,7 @@
 
 3. 如果没有任何一个玩家叫分，则服务器洗牌，重新发卡组信息，重新开始叫地主；如果连续三轮没有人叫地主，则服务器随机指定一个人作为地主，底分设置为1，进入发地主牌阶段。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image012.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/叫地主.gif)
  
 ### 出牌阶段
 出牌细则：地主先出牌，按逆时针循环顺序依次出牌，每位玩家有36秒的出牌时间，如果玩家36秒内未出牌，客户端会自动进行托管，由AI帮用户出牌；如果39秒内客户端未发消息给服务器，服务器将其设置为AI出牌，并认为该玩家断线。轮到用户跟牌时，用户可以选择“不出”或出比上一个玩家大的牌。某一玩家出完牌时进入积分结算阶段。
@@ -65,7 +65,7 @@
 
 3.2.	如果当前处于上家已出牌阶段，单击“提示”会提示比上家大的牌，再次点击“提示”会提示比当前提示大的牌，依次循环；如果当前没有比上家大的牌，则提示当前没有可出的牌。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image013.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/出牌.gif)
  
 ### 积分结算阶段
 地主胜：地主得分为3×底分×倍数；其余玩家各得：－底分×倍数
@@ -99,6 +99,8 @@
 本游戏手牌有两种排序方式，一种是按照牌的大小进行排序，另一种是按照牌的数量进行排序。单击排序按钮后会在两种排序方式下切换。
 
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image017.jpg)
+
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/排序.gif)
 ## 背景音乐按钮
 控制背景音乐播放，可关闭背景音乐和开启背景音乐。
 背景音乐播放：从八首背景音乐中循环播放，当一首结束后随机播放下一首。
@@ -122,3 +124,5 @@
 
 ## 断线重连功能
 在网络模式下提供断线重连的功能，如果玩家在叫分阶段或者是出牌阶段退出游戏，服务器将设置该玩家为不叫分并让AI为其出牌。当该玩家在登录阶段登录时或者在匹配阶段匹配时，如果上局并未结束将会进入断线重连状态，如果当前局处在叫分阶段，则玩家客户端将直接进入发牌阶段（加快发牌动画）；如果当前局处在出牌阶段，将从发牌阶段后直接进入出牌阶段，玩家即可继续本局游戏。
+
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/断线重连.gif)
