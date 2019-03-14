@@ -79,40 +79,42 @@
  
 ## 单机模式
 单机模式和联网模式的流程相同，单击“单机模式”进入如下界面（单机模式无需联网），其余三个人为电脑，单机模式多了个明牌按钮，下面介绍额外功能会介绍。
+
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image015.jpg)
 #  游戏额外功能介绍
 ## 功能按钮
 ### 托管功能
 玩家单击托管按钮，显示托管图片，进入托管状态，玩家出牌将由AI进行控制。在托管状态下单击托管按钮可取消托管状态。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image015.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image016.jpg)
 ### 排序功能
 本游戏手牌有两种排序方式，一种是按照牌的大小进行排序，另一种是按照牌的数量进行排序。单击排序按钮后会在两种排序方式下切换。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image016.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image017.jpg)
 ### 背景音乐按钮
 控制背景音乐播放，可关闭背景音乐和开启背景音乐。
 背景音乐播放：从八首背景音乐中循环播放，当一首结束后随机播放下一首。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image017.jpg)
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image018.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image019.jpg)
 ### 游戏音效按钮
 控制游戏音效播放，可关闭游戏音效和开启游戏音效。
 游戏音效播放：有开始游戏、发牌、出牌、提醒、倍数翻倍、胜利失败、男女生出牌类型、叫地主、抢地主、打牌、不出、不叫、飞机炸弹音等等各种音效。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image019.jpg)
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image020.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image021.jpg)
 ### 明牌按钮
 在单机模式下，玩家可以点击明牌按钮，电脑的牌将会翻转（显示），图标从“明”字变为“暗”字，点击“暗”字，电脑的将再次翻转（关闭显示）。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image021.jpg)  
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image022.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image022.jpg)  
 ![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image023.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image024.jpg)
 
 ## 特殊操作
 ### 连续选牌
 选牌的时候可以进行连续选牌，被选中的牌会变成阴影。松开后，变成阴影的牌会相应的上浮或下移，然后扑克牌图片还回原样。
 
-![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image024.jpg)
+![image](https://raw.githubusercontent.com/WangAnXin/poker/master/Poker/rdImage/image025.jpg)
 ### 长按屏幕可以使在上方的牌全部放下
 
 ## 断线重连功能
